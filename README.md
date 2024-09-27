@@ -10,15 +10,10 @@ From there, I re-wrote the C code in Zig and discovered some quirks with how Zig
 
 ### How to test
 
-Clone the repo and then use `pcre([]const u8: pattern, []const u8 subject)`. Where `pattern` is your needle and `subject` is your haystack.
-
-Then do `zig build run` to get results. Noted that you can only test UTF-8 strings at the moment.
+Clone the repo and then do `zig build run` to get results. You can change the pattern and the subject in the code. Note that you can only test UTF-8 strings at the moment.
 
 ### What good is this?
 
-Consider this repo more as a reference than anything else. There is a lot more testing that needs to be done. Of particular note will be:
-
-* How to integrate PCRE2 into Zig using the `build.zig` file. (PCRE2 already has a build.zig in its repo!)
-* How to use PCRE2 from within Zig. I find that writing the C first and then translating works best for me.
+Consider this repo more as a reference than anything else. There is a lot more testing that needs to be done. It will be interesting to match a few of the go Regexp APIs.
 
 Pull requests always welcome.

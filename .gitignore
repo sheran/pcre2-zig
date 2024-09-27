@@ -1,3 +1,4 @@
 zig-out/
 .zig-cache/
 a.out
+pcre_test

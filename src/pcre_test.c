@@ -1,5 +1,5 @@
 #define PCRE2_CODE_UNIT_WIDTH 8
-#include "/../../../../../opt/homebrew/include/pcre2.h"
+#include "../../pcre2/install/include/pcre2.h"
 #include <stdio.h>
 #include <string.h>
 
